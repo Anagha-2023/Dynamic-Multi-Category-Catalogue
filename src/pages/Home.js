@@ -20,10 +20,6 @@ function Home() {
 
   const categories = Object.keys(categorizedItems);
 
-  const displayedItems = selectedCategory
-    ? categorizedItems[selectedCategory]
-    : Object.values(categorizedItems).flat();
-
   return (
     <div className="home">
       <div className="home-header">
